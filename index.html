@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="outer">
+    <div id="display"></div>
+    <div id="buttons">
+        <button class="number" onclick="appendNumber('7')" id="buttons">7</button>
+        <button class="number" onclick="appendNumber('8')" id="buttons">8</button>
+        <button class="number" onclick="appendNumber('9')" id="buttons">9</button>
+        <button class="operator" onclick="setOperator('+')" id="buttons">+</button>
+        <button class="number" onclick="appendNumber('4')" id="buttons">4</button>
+        <button class="number" onclick="appendNumber('5')" id="buttons">5</button>
+        <button class="number" onclick="appendNumber('6')" id="buttons">6</button>
+        <button class="operator" onclick="setOperator('-')" id="buttons">-</button>
+        <button class="number" onclick="appendNumber('1')" id="buttons">1</button>
+        <button class="number" onclick="appendNumber('2')" id="buttons">2</button>
+        <button class="number" onclick="appendNumber('3')" id="buttons">3</button>
+        <button class="operator" onclick="setOperator('*')" id="buttons">X</button>
+        <button class="number" onclick="appendNumber('0')" id="buttons">0</button>
+        <button class="number" onclick="appendNumber('.')" id="buttons">.</button>
+        <button class="clear" onclick="clearDisplay()" id="buttons">C</button>
+        <button class="operator" onclick="setOperator('/')" id="buttons">/</button>
+        <button class="equals" onclick="equals()" id="buttons">=</button>
+        <button class="square" onclick="setOperator('\u221A'), equals()" id="buttons">√</button>
+        <button class="log" onclick="setOperator('\u006C\u006E') , equals()" id="buttons">ln</button>
+        <button class="pow" onclick="setOperator('pow'), equals()" id="buttons">x²</button>
+        <button class="reverse" onclick="setOperator('reverse'), equals()" id="buttons">+/-</button>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2023 Pedro Simoes</p>
+</footer>
+<script src="app.js"></script>   
+</body>
+</html>
